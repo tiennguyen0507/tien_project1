@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in | FANoFAN</title>
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="Login/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Login/css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Sign in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="Login/images/signin-image.jpg" alt="..."></figure>
+                        <a href="index.html" class="btn_back" type="submit">
+                            << Quay lại trang chủ </a>
+                    </div>
+                    <div class="signin-form">
+                        <form method="POST" class="register-form" id="login-form " action="index.html">
+                            <div class="form-group">
+                                <label for="your_name" style="top: 55%!important; left: 7px;"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text " style="padding-left:20px" class="form-control" id="uname" placeholder="Enter your username" autocomplete="off" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass" style="top: 53%!important; left: 7px;"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" style="padding-left:20px" class="form-control" id="pwd" placeholder="Enter your password" name="pswd" required>
+                            </div>
+                            <div class="form-group d-flex  align-items-center" style="margin-bottom: 0;">
+                                <label class="check"> Remember
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                <a href="quen-mat-khau.html" class="register"> Forgot your pass word ? </a>
+                            </div>
+                            <div class="form-group form-button" style="margin-bottom: 0;">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                            </div>
+                            <div class="form-group d-flex mt-4  align-items-center justify-content-center">
+                                <span class="mr-1">Not a member ? </span>
+                                <a href="quen-mat-khau.html"> Register </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="Login/vendor/jquery/jquery.min.js"></script>
+    <script src="Login/js/main.js"></script>
+</body>
+
+</html>

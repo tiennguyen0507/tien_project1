@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Account | FANoFAN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="Login/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="Login/css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Registry</h2>
+                        <form method="POST" class="register-form " id="register-form" action="Login.html">
+                            <div class="form-group">
+                                <label for="name" style="top: 53%!important; left: 7px;"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text " style="padding-left:20px" class="form-control" id="uname" placeholder="Enter Your Name" name="uname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" style="top: 53%!important; left: 7px;"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email " style="padding-left:20px" class="form-control" id="uname" placeholder="Enter Your Email" name="uname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass" style="top: 53%!important; left: 7px;"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" style="padding-left:20px" class="form-control" id="pwd" placeholder="Enter your password" name="pswd" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass" style="top: 53%!important; left: 7px;"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" style="padding-left:20px" class="form-control" id="pwd" placeholder="Repeat your password" name="pswd" required>
+                            </div>
+                            <div class="form-group">
+                                <div class="tem">
+                                    <p>1. Line1</p>
+                                    <p>1. Line1</p>
+                                    <p>1. Line1</p>
+                                    <p>1. Line1</p>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term">
+                                    <span><span></span></span>I agree with all of the above terms 
+                                    <a href="#!" class="term-service">Terms of service</a>
+                                        <script>
+                                            var btn_toggle = document.querySelector('.term-service');
+                                            var item = document.querySelector('.tem')
+                                            btn_toggle.addEventListener('click' , function(){
+                                                item.classList.toggle('tem1')
+                                                btn_toggle.style.textDecoration= "underline";
+                                            if(btn_toggle.innerHTML === "Terms of service") {
+                                            btn_toggle.innerHTML = "Hidden"
+                                            }  else{
+                                            btn_toggle.innerHTML="Terms of service"
+                                            }
+                                            })
+                                        </script>
+                                </label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Confirm" />
+                                <a href="index.html" class="btn_back1" type="submit">
+                                    << Quay lại trang chủ</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="Login/images/signup-image.jpg" alt="sing up image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- JS -->
+    <script src="Login/vendor/jquery/jquery.min.js"></script>
+    <script src="Login/js/main.js"></script>
+</body>
+
+</html>
